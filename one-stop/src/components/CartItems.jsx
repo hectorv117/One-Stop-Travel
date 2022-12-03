@@ -21,7 +21,7 @@ const CartItems = () => {
     <>
     
 
-    <div className='w-1/2 p-5  flex flex-col h-screen '>
+    <div className='w-1/2 p-5  flex flex-col h-max '>
 
    {
     cart ? cart.line_items.map((prod)=>(

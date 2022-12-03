@@ -8,7 +8,7 @@ import { CartContext } from '../contexts/CartContext';
 
 const Checkout = () => { 
     const navigate = useNavigate();
-    const {cart, purchasedItems, setPurchasedItems} = useContext(CartContext)
+    const {cart, purchasedItems, setPurchasedItems, emptyCart} = useContext(CartContext)
 
     const [billingMsg, setBillingMsg] = useState('Save')
     const [paymentMsg, setPaymentMsg] = useState('Add Payment Method')
@@ -43,6 +43,7 @@ const Checkout = () => {
           cart.line_items.map((kit)=>{
             setPurchasedItems(curr=>[...curr, kit])
           })
+          emptyCart()
           navigate('/confirmation')
         }
       }
@@ -50,7 +51,7 @@ const Checkout = () => {
     return (
         <>
             <Navbar />
-            <div class="flex flex-row space-x-10 mt-20 mb-10 h-screen">
+            <div class="flex flex-row space-x-10 mt-20 mb-56 h-screen">
                 <div class="flex flex-col w-2/3 ml-10 mt-10 font-poppins">
                 <h1 className='text-center text-2xl pb-5'>Checkout</h1>
                     <h1 class="pb-3 ">Billing Details</h1>

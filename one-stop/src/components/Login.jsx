@@ -55,7 +55,7 @@ const Signup = () => {
                     {/* <h1 class="mb-4 mt-20 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
                         Stress Free Traveling </h1> */}
 
-                    <h1 class="mb-4 mt-20 text-3xl font-extrabold text-gray-900 dark:text-white md:text-5xl lg:text-6xl"><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Stress Free</span> Traveling</h1>
+                    <h1 class="mb-4 mt-20 text-5xl font-extrabold text-gray-900 dark:text-white "><span class="text-transparent bg-clip-text bg-gradient-to-r to-emerald-600 from-sky-400">Stress Free</span> Traveling</h1>
                     <p class="text-lg font-normal text-gray-500 lg:text-xl dark:text-gray-400">Here at One Stop Travel you can make traveling a lot easier by  quickly purchasing one of our custom tailored kits with all the traveling essentials for your destination</p>
 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-96 h-96 ml-20 stroke-1">

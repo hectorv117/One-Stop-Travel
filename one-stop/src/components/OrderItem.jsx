@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 const OrderItem = ({id, name, price, image, qty}) => {
   return (
-    <div className='flex flex-row rounded-md w-1/2 shadow-md ml-80 p-5 border'>
+    <div className='flex  flex-row rounded-md w-1/2 shadow-md ml-80 p-5 border'>
         <img src={image} alt="" className='w-48 h-48 p-3' />
         <div className='flex flex-col'>
             <h1 className='text-4xl p-1 font-bold text-center mt-16'>{name}

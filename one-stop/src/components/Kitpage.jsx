@@ -46,7 +46,7 @@ const Kitpage = () => {
                                     <img
                                     key={i}
                                         src={url}
-                                        class="  object-contain w-full h-96"
+                                        class="  object-fill ml-5 w-full h-96"
                                         alt="..." />
                                 )
                         })
