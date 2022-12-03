@@ -16,40 +16,46 @@ const Kitpage = () => {
 
     const geturls = async () => {
         let assets = await data.assets
-
+        console.log('assets', assets);
         setUrls(assets)
+        console.log('urlss', urls);
     }
 
     useEffect(() => {
         geturls();
-    }, [urls])
+    }, [])
     return (
         <>
 
 
             <Navbar />
             <div class="flex flex-row flex-wrap mt-10 min-h-2/3 ">
+
+
                 <div className="  h-3/4 w-3/4 md:w-1/2 mt-20 h-full">
-
-
-                    <Carousel className=' '>
+                   
+                    {/* <Carousel > */}
                         {
 
                             urls.map((u, i) => {
                                 console.log('u', u);
                                 console.log('i', i);
-                                return(
-                                <img
-                                key={i}
-                                    src={u.url}
-                                    class="  object-contain w-full bg-slate-300"
-                                    alt="..." />
-
-                            )})
-
+                                let url = u.url
+                                if (i===0)
+                                    return(
+                                    <img
+                                    key={i}
+                                        src={url}
+                                        class="  object-contain w-full h-96"
+                                        alt="..." />
+                                )
+                        })
                         }
 
-                    </Carousel>
+                    {/* </Carousel> */}
+
+
+
                 </div>
 
                 <div class="flex flex-col mt-20 md:pl-20 pl-10 font-poppins">
